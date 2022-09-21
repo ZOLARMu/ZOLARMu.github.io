@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="INICIO.css">
+  <link rel="icon" href="favicon (3).ico" type="image/x-icon">
+  
+  <title>ZOLAR</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <h1 class="label">Zolar Records&#174;
+        <style>
+          header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 100px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .label {
+            color: rgb(219, 157, 32);
+            cursor: pointer;
+            font-size: smaller;
+          }
+        </style>
+      </h1>
+      <div class="toggle"></div>
+    </header>
+    <video src="images\banda.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>ZOLAR </h2>
+
+      <p>
+        <style>
+          p {
+            font-style: oblique;
+          }
+        </style>
+        Banda emergente de rock indie alternativo conformada por cinco grandes músicos, Francisco Jiménez, Octavio
+        Castillo, Diego Mejía, Andrés Argüello y Mariano Yáñez, quienes comparten el sueño de tocar en grandes
+        escenarios compartiendo su música y energía a nivel mundial.
+      </p>
+      <a href="MUSICA.html">Explorar</a>
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/ChuchoSolar"><img src="images\facebook.png"></a></li>
+      <li><a href="https://www.youtube.com/channel/UCJppT1LQuloEOZieFds8-cA"><img src="images\youtube.png"></a></li>
+      <li><a href="https://www.instagram.com/zolar_mx1/"><img src="images\instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="INICIO.html">Inicio</a></li>
+      <li><a href="MUSICA.html">Música</a></li>
+      <li><a href="CONTACTO.html">Contacto</a></li>
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })
+  </script>
+
+</html>
